@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <script type="text/javascript">
+        function slide1(){
+        document.getElementById('id').src="1.bmp";
+        document.getElementById('id').src='imagem/banner_1.png'
+        setTimeout("slide2()", 1000)
+        }
+        
+        function slide2(){
+        document.getElementById('id').src="2.bmp";
+        document.getElementById('id').src='imagem/banner_2.png'
+        setTimeout("slide3()", 1000)
+        }
+        
+        function slide3(){
+        document.getElementById('id').src="3.bmp";
+        document.getElementById('id').src='imagem/banner_3.png'
+        setTimeout("slide1()", 1000)
+        }
+        </script>
+        <body onLoad="slide1()">
+        <img id="id">
+</body>
+</html>
+
+
+
